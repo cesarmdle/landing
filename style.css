@@ -1,8 +1,9 @@
 /* Write some CSS below *//* style.css */
 body {
   font-family: Overpass;
-  color: purple;
+  color: white;
   font-size: 18px;
+  background-color: black;
 }
 
 h1, h2, h3 {
@@ -12,14 +13,15 @@ po  center;
 }
 
 a {
-  color: purple;
+  color: whitesmoke;
   font-weight: bold;
   text-decoration: none;
   transition: .3s;
 }
 
 a:hover {
-  color: #CE2FAE;
+  color: orangered ;
+  font-size: 25px;
 }
 
 body {
@@ -27,25 +29,30 @@ body {
   margin: 0;
 }
 
-h1, h2, h3 {
-  color: purple;
+h1 {
+  color: white;
+  background-color: none;
   font-family: Chivo;
 }
 
+
+
 p {
-  color: #404042;
+  color: black;
   opacity: .7;
 }
 
 .container {
   width: 800px;
   margin: auto;
+  background-color: black;
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://sf1.autoplus.fr/wp-content/uploads/autoplus/2013/05/le-gumball-3000-offre-une-conscience-ecologique.jpg');
   background-size: cover;
   background-position: center;
+  background-color: black;
   padding: 150px 0;
   text-align: center;
 }
@@ -57,33 +64,34 @@ p {
 }
 
 .banner p {
-  color: white;
+  color: orangered;
   font-size: 24px;
 }
 
 .button-blue {
-  background-color: #1A48E3;
+  background-color: black;
   color: white;
   padding: 16px 48px;
   border-radius: 4px;
   display: inline-block;
-  text-decoration: none;
+  text-decoration: blink;
   transition: .3s;
 }
 
 .button-blue:hover {
-  background-color: #0D1EC6;
-  color: white;
+  background-color: black;
+  color: orangered;
 }
 
 .card-white {
-  background: white;
-  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  background: darkorange ;
+  box-shadow: 0 0 16px rgba(0,0,0,0,1);
   border-radius: 4px;
   width: 200px;
   text-align: center;
   padding: 24px;
-  margin: 8px;
+  margin:8px;
+  background-color: orangered;
 }
 
 .card-white img {
@@ -98,13 +106,53 @@ p {
 }
 
 .footer {
-  background: #404042;
+  background: white;
   text-align: center;
   padding: 24px 0;
+  background-color: white;
 }
 
 .footer p {
   color: white;
+  background-color: white;
+}
 
+.cards {
+  display: grid ;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
 
+/* Cards media queries */
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
   
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
+
+
+
